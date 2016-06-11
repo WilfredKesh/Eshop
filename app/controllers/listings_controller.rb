@@ -1,7 +1,6 @@
 class ListingsController < ApplicationController
   before_action :set_listing, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
-  before_filter :check_user, only:[:edit, :update, :destroy]
+ 
 
   # GET /listings
   # GET /listings.json
@@ -69,11 +68,6 @@ class ListingsController < ApplicationController
 
   private
 
-    def check_user
-      if current_user != @listing.user
-        redirect_to root_url, alert: "Sorry, this listing belongs to someone else"
-      end
-    end
     # Use callbacks to share common setup or constraints between actions.
     def set_listing
       @listing = Listing.find(params[:id])
