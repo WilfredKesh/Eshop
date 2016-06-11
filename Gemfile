@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'paperclip-dropbox', '~> 1.3', '>= 1.3.2'
 gem 'figaro'
+gem 'devise'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
