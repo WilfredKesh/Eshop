@@ -7,9 +7,12 @@ Rails.application.routes.draw do
   get 'seller' => "listings#seller"
 
   root 'listings#index'
+  get 'sales' => "orders#sales"
+  get 'purchases' => "orders#purchases"
+
 
   resources :listings do 
-      resources :orders
+      resources :orders, only: [:new, :create]
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

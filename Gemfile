@@ -14,6 +14,7 @@ gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'paperclip-dropbox', '~> 1.3', '>= 1.3.2'
 gem 'figaro'
 gem 'devise'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
