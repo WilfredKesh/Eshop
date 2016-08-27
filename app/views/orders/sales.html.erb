@@ -1,26 +1,27 @@
-<div class="center">
-  <h2>Your Sales History</h2>	
+<div class="container ">
+  <div class="center">
+  <h2 class="big-title">Your Sales History</h2> 
 </div>
 
 <table class="table table-centered table-bordered">
   <tr>
-    <th class="center">Image</th>
-    <th class="center">Item</th>
-    <th class="center">Price</th>
-    <th class="center">Customer</th>
-    <th class="center">Date Sold</th>
+    <th class="center row-heading">Image</th>
+    <th class="center row-heading">Item</th>
+    <th class="center row-heading">Price</th>
+    <th class="center row-heading">Customer</th>
+    <th class="center row-heading">Date Sold</th>
 
-  	
+    
   </tr>
 
   
   <% @orders.each do |order| %>
-    <tr>
-      <td class="center"><%= image_tag order.listing.image.url(:thumb) %></td>
-      <td class="center"><%= order.listing.name %></td>
-      <td class="center"><%= number_to_currency(order.listing.price) %></td>
-      <td class="center"><%= order.buyer.name %></td>
-      <td class="center"><%= order.created_at.strftime("%B %-d, %Y") %></td>
+    <tr class="row-parent">
+      <td class="center row-text" style="vertical-align: middle;"><%= image_tag order.listing.image.url(:thumb) %></td>
+      <td class="center row-text"><%= order.listing.name %></td>
+      <td class="center row-text"><%= number_to_currency(order.listing.price) %></td>
+      <td class="center row-text"><%= order.buyer.name %></td>
+      <td class="center row-text"><%= order.created_at.strftime("%B %-d, %Y") %></td>
     </tr>
   <% end %>
 </table>
@@ -30,5 +31,7 @@
 <% if user_signed_in? %>
   <%= link_to 'New Listing', new_listing_path, class: "btn btn-link" %>
 <% end %>
-	
+  
 </table>
+  
+</div>

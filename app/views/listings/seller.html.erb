@@ -1,19 +1,22 @@
-<table class="table table-striped table-bordered">
+<div class="container">
+  <h2 class="center big-title">Your Listings</h2> 
+
+   <table class="table table-striped table-bordered">
   <tr>
-    <th class="center">Image</th>
-    <th class="center">Name</th>
-    <th class="center">Description</th>
-    <th class="center">Price</th>
-    <th class="center">Action</th>
+    <th class="center seller-heading">Image</th>
+    <th class="center seller-heading">Name</th>
+    <th class="center seller-heading">Description</th>
+    <th class="center seller-heading">Price</th>
+    <th class="center seller-heading">Action</th>
   </tr>
 
   <% @listings.each do |listing| %>
     <tr>
-      <td><%= image_tag listing.image.url(:thumb) %></td>
-      <td><%= listing.name %></td>
-      <td><%= listing.description %></td>
-      <td><%= number_to_currency(listing.price) %></td>
-      <td>
+      <td class="seller-row"><%= image_tag listing.image.url(:thumb) %></td>
+      <td class="seller-row"><%= listing.name %></td>
+      <td class="seller-row"><%= listing.description %></td>
+      <td class="seller-row"><%= number_to_currency(listing.price) %></td>
+      <td class="valign">
          <div class="btn-group">
           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
             Action<span class="caret"></span>            
@@ -39,3 +42,5 @@
 <% if user_signed_in? %>
   <%= link_to 'New Listing', new_listing_path, class: "btn btn-link" %>
 <% end %>
+  
+</div>

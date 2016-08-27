@@ -1,14 +1,192 @@
 <div class="jumbotron">
+    <%= form_tag search_path, class: "navbar-form ", method: :get do %>
+        <div class="form-group">
+          <%= text_field_tag :search, params[:search], placeholder: "What are you shopping for?", class: "form-control", id: "search-form" %>
+           <%= submit_tag "Search", class: "btn", id: "search-button" %>
+        </div>
+      <% end %>
   
 </div>
 
 <div class="text-center container">
   <h1 id="main-heading">Buy or sell anything</h1>
-  <h2>Explore from our huge catalog of products.</h2>
+   <h2>Search by Category</h2>
+</div>
+<div class="row text-center">
+  <div class="col-md-10 col-md-offset-1 col-sm-12">
+    <div class="col-md-2">
+    <div class="panel panel-default">
+      <div class="panel-heading preview">
+        <img src="https://s3-us-west-2.amazonaws.com/etsydemo5/main-page/rolex.jpg">          
+      </div>
+      <div class="panel-body">
+        <p id="panel-text">Jewelry</p>
+      </div>
+      
+    </div>  
+  </div>
+   <div class="col-md-2">
+    <div class="panel panel-default">
+      <div class="panel-heading preview">
+        <img src="https://s3-us-west-2.amazonaws.com/etsydemo5/main-page/clothes.jpg">          
+      </div>
+      <div class="panel-body">
+        <p id="panel-text">Clothing</p>
+      </div>
+      
+    </div>  
+  </div>
+   <div class="col-md-2">
+    <div class="panel panel-default">
+      <div class="panel-heading preview">
+        <img src="https://s3-us-west-2.amazonaws.com/etsydemo5/main-page/curtains.jpg">          
+      </div>
+      <div class="panel-body">
+        <p id="panel-text">Home & Living</p>
+      </div>
+      
+    </div>  
+  </div>
+   <div class="col-md-2">
+    <div class="panel panel-default">
+      <div class="panel-heading preview">
+        <img src="https://s3-us-west-2.amazonaws.com/etsydemo5/main-page/toys.jpg">          
+      </div>
+      <div class="panel-body">
+        <p id="panel-text">Toys & Games</p>
+      </div>
+      
+    </div>  
+  </div>
+   <div class="col-md-2">
+    <div class="panel panel-default">
+      <div class="panel-heading preview">
+        <img src="https://s3-us-west-2.amazonaws.com/etsydemo5/main-page/computer.jpg">          
+      </div>
+      <div class="panel-body">
+        <p id="panel-text">Electronics</p>
+      </div>
+      
+    </div>  
+  </div>
+  </div>
+
+
+  
 </div>
 <div class="orange-sec text-center">
-  <h1 class="orange-text">Start selling today</h1>
+  <h1 class="orange-text space" id="yellow-pad">Start selling today</h1>
   <h3 class="lower-text">Join millions of people who list their products at Etsy</h3>
+</div>
+
+<div class="text-center">
+   <h2 id="text-pad">Browse from our latest collection.</h2>
+
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-sm-12">
+    <div class="collection-box" >
+      <img class="collection-image" src="https://s3-us-west-2.amazonaws.com/etsydemo5/main-page/school.jpg"> 
+      <span class="text-center collection-text valign">Back to school trends</span>  
+    </div>
+    
+  </div>
+   <div class="col-md-6 col-sm-12">
+    <div class="collection-box" >
+      <img class="collection-image" src="https://s3-us-west-2.amazonaws.com/etsydemo5/main-page/dress4.jpg"> 
+      <span class="text-center collection-text valign">Back to school trends</span>  
+    </div>
+    
+  </div>
+
+  
+</div>
+
+<div class="text-center">
+   <h2 id="text-pad">Recent reviews from happy people.</h2>
+
+</div>
+
+<div class="row">
+  <div class="col-md-4 col-sm-12">
+    <div class="panel panel default review-card">
+      <div class="img-avatar">
+        <img class="avatar" src="https://s3-us-west-2.amazonaws.com/etsydemo5/main-page/face1.jpg">
+        
+      </div>
+      <div class="panel-body review-box center">
+        <p>Emily <span class="quote">Wrote on August 12<span></p>
+        <div class="stars">
+          <span><img src="https://s3-us-west-2.amazonaws.com/yelp-demo/stars/star-on.png"></span>
+          <span><img src="https://s3-us-west-2.amazonaws.com/yelp-demo/stars/star-on.png"></span>
+          <span><img src="https://s3-us-west-2.amazonaws.com/yelp-demo/stars/star-on.png"></span>
+          <span><img src="https://s3-us-west-2.amazonaws.com/yelp-demo/stars/star-on.png"></span>
+          <span><img src="https://s3-us-west-2.amazonaws.com/yelp-demo/stars/star-on.png"></span>
+        </div>
+        <p>I loved really loved the dress!</p>
+        <div class="image-box">
+          <img class="img-box" src="https://s3-us-west-2.amazonaws.com/etsydemo5/main-page/dress3.jpg">
+        
+        </div>
+
+      </div>
+      
+   
+    </div>    
+  </div>
+    <div class="col-md-4 col-sm-12">
+    <div class="panel panel default review-card">
+      <div class="img-avatar">
+        <img class="avatar" src="https://s3-us-west-2.amazonaws.com/etsydemo5/main-page/face5.jpg">
+        
+      </div>
+    
+        <div class="panel-body review-box center">
+        <p>Emily <span class="quote">Wrote on July 20<span></p>
+        <div class="stars">
+          <span><img src="https://s3-us-west-2.amazonaws.com/yelp-demo/stars/star-on.png"></span>
+          <span><img src="https://s3-us-west-2.amazonaws.com/yelp-demo/stars/star-on.png"></span>
+          <span><img src="https://s3-us-west-2.amazonaws.com/yelp-demo/stars/star-on.png"></span>
+          <span><img src="https://s3-us-west-2.amazonaws.com/yelp-demo/stars/star-on.png"></span>
+          <span><img src="https://s3-us-west-2.amazonaws.com/yelp-demo/stars/star-on.png"></span>
+        </div>
+        <p>My mac was delivered on time</p>
+        <div class="image-box">
+          <img class="img-box" src="https://s3-us-west-2.amazonaws.com/etsydemo5/main-page/mac.jpg">
+          
+        </div>
+      </div>
+
+      
+    </div>    
+  </div>
+    <div class="col-md-4 col-sm-12">
+    <div class="panel panel default review-card">
+      <div class="img-avatar">
+        <img class="avatar" src="https://s3-us-west-2.amazonaws.com/etsydemo5/main-page/face3.jpg">
+        
+      </div>
+    
+       <div class="panel-body review-box center">
+        <p>Emily <span class="quote">Wrote on June 15<span></p>
+        <div class="stars">
+          <span><img src="https://s3-us-west-2.amazonaws.com/yelp-demo/stars/star-on.png"></span>
+          <span><img src="https://s3-us-west-2.amazonaws.com/yelp-demo/stars/star-on.png"></span>
+          <span><img src="https://s3-us-west-2.amazonaws.com/yelp-demo/stars/star-on.png"></span>
+          <span><img src="https://s3-us-west-2.amazonaws.com/yelp-demo/stars/star-on.png"></span>
+          <span><img src="https://s3-us-west-2.amazonaws.com/yelp-demo/stars/star-on.png"></span>
+        </div>
+        <p>Loving my necklace. Will buy more!</p>
+        <div class="image-box">
+          <img class="img-box" src="https://s3-us-west-2.amazonaws.com/etsydemo5/main-page/necklace1.jpg">
+          
+        </div>
+      </div>
+
+      
+    </div>    
+  </div>  
 </div>
 
 <table>

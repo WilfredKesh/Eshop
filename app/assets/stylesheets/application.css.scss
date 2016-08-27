@@ -20,7 +20,7 @@
 
 
 .jumbotron{
-	background-image: url('https://dl.dropboxusercontent.com/s/5u9u0uis7dztkmx/banner.jpg?dl=0');
+	background-image: url('https://s3-us-west-2.amazonaws.com/etsydemo5/main-page/etsy-image.jpg');
 	  h1, h2 {
     font-family: guardian-egyptt, georgia, serif;
 
@@ -30,7 +30,30 @@
     position: relative;
 }
 
+#search-button{
+	background-color: #d5641c;
+    color: #fff;
+    position: relative;
+    bottom: -100px;
+    height: 50px;
+    width: 100px;
+    font-size: 16px;
+    margin-left: -5px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
 
+#search-form{
+	position: relative;
+    bottom: -100px;
+    height: 50px;
+    width: 399px;
+    padding-left: 90px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 40px;
+}
 body {
   background-color: #F5F5F1;
   color: #333333;
@@ -58,7 +81,6 @@ body {
 .navbar-default .navbar-nav > li > a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
-  font-weight: bold;
   color: #0192B5;
 }
 
@@ -141,5 +163,170 @@ body {
     font-size: 46px;
     color: #ff883e;
     font-family: helvetica;
+    letter-spacing: 4px;
 	
+}
+
+#panel-text{
+	 margin: 0 auto;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+
+.preview{
+	    padding: 0;
+
+}
+
+#yellow-pad{
+	padding-top: 70px;
+}
+
+#text-pad{
+	margin: 80px 0px;
+}
+
+.row-text{
+	vertical-align: middle !important;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #535050;
+ 
+}
+.row-heading{
+	font-size: 20px;
+    color: #645d5d;
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+
+.seller-heading{
+    font-size: 18px;
+    color: #645d5d;
+    line-height: 50px;
+    letter-spacing: 1px;
+	
+}
+.big-title{
+	letter-spacing: 4px;
+    padding: 30px 0 45px 0;
+}
+
+.seller-row{
+	vertical-align: middle !important;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.valign{
+	vertical-align: middle !important;
+}
+
+
+.avatar{
+	height: 100px;
+	width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    }
+
+
+.panel-margin{
+	    margin: 0 20px 0 20px;
+}    
+
+.review-card{
+	margin: 0 20px 0 20px;
+    height: 500px;
+    border: 1px solid #ccc;
+
+}
+
+.img-avatar{
+	left: 40%;
+    position: relative;
+}
+
+.review-box{
+	 margin-top: 60px;
+
+}
+
+.stars{
+	    margin: 20px;
+}
+
+.image-box{
+	 margin-top: 25px;
+
+}
+
+.img-box{
+	    height: 250px;
+   
+}
+
+.collection-box{
+	height: 260px;
+    background-color: #eeeeee;
+    margin: 0 60px;
+    border: 1px solid #ccc;}
+
+
+.collection-image{
+	height: 260px;
+    width: 50%;
+}
+
+.collection-text{
+	font-size: 25px;
+    margin-left: 20px;
+}
+
+.space{
+	    letter-spacing: 2px;
+}
+
+#footer{
+	height: 400px;
+	background-color: #eeeeee;
+}
+
+
+#newsletter-btn{
+	width: 150px;
+    height: 50px;
+    background-color: #FF883E;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+#newsletter-input{
+	margin: 50px 10px;
+	width: 300px;
+	height: 50px;
+	display: inline;
+
+}
+
+.footer-link{
+	font-size: 16px;
+    letter-spacing: 1px;
+    color: #337ab7 !important;
+    font-family: Graphik Web, Arial, Helveticca;
+}
+
+.li-footer{
+	list-style: none;
+    padding-left: 20px;
+    margin: 5px 0;
+}
+
+.footer-title{
+	margin-left: 20px;
+    font-size: 16px;
+
 }

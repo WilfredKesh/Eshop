@@ -18,10 +18,14 @@ class ListingsController < ApplicationController
   # GET /listings/new
   def new
     @listing = Listing.new
+    @categories = Category.all.map{ |c| [c.name, c.id] }
   end
 
+  def search 
+  end
   # GET /listings/1/edit
   def edit
+    @categories = Category.all.map{ |c| [c.name, c.id] }
   end
 
   def seller
@@ -31,7 +35,11 @@ class ListingsController < ApplicationController
   # POST /listings.json
   def create
     @listing = Listing.new(listing_params)
+    @listing.category_id = params[:category_id]
     @listing.user_id = current_user.id
+
+    current_user.save
+    
 
     respond_to do |format|
       if @listing.save
@@ -47,6 +55,7 @@ class ListingsController < ApplicationController
   # PATCH/PUT /listings/1
   # PATCH/PUT /listings/1.json
   def update
+    @listing.category_id = params[:category_id]
     @listing.user_id = current_user.id
 
 
@@ -85,32 +94,6 @@ class ListingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def listing_params
-      params.require(:listing).permit(:name, :description, :price, :image
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        )
+      params.require(:listing).permit(:name, :description, :price, :image, :category_id)
     end
 end

@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
 
+
   devise_for :users
   get 'pages/about'
 
   get 'pages/contact'
   get 'seller' => "listings#seller"
+  get '/search' => 'pages#search'
 
   root 'listings#index'
   get 'sales' => "orders#sales"
