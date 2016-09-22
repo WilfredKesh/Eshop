@@ -5,10 +5,11 @@ Rails.application.routes.draw do
   get 'pages/about'
 
   get 'pages/contact'
+  get '/listings' => "listings#index"
   get 'seller' => "listings#seller"
   get '/search' => 'pages#search'
 
-  root 'listings#index'
+  root 'pages#home'
   get 'sales' => "orders#sales"
   get 'purchases' => "orders#purchases"
 

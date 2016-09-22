@@ -2,6 +2,10 @@ class PagesController < ApplicationController
   def about
   end
 
+  def home
+  	 	@listings = Listing.all.limit(4)
+  end
+
   def contact
   end
 

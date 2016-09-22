@@ -187,6 +187,12 @@ body {
 	margin: 80px 0px;
 }
 
+#text-review{
+	margin: 80px 0px;
+	padding-bottom: 40px;
+}
+
+
 .row-text{
 	vertical-align: middle !important;
     font-size: 18px;
@@ -278,11 +284,14 @@ body {
 .collection-image{
 	height: 260px;
     width: 50%;
+    border-right: 1px solid #ccc;
+
 }
 
 .collection-text{
 	font-size: 25px;
     margin-left: 20px;
+    color: #ff883e;
 }
 
 .space{
@@ -329,4 +338,37 @@ body {
 	margin-left: 20px;
     font-size: 16px;
 
+}
+
+
+.search-fm{
+	height: 70px;
+    background-color: #d5641c;
+    line-height: 70px;
+}
+
+
+.text-search{
+	width: 350px;
+    height: 50px;
+    margin: 0px 0px 5px;
+}
+
+
+#button-search{
+    width: 150px;
+    margin: 0 10px 5px 11px;
+    height: 50px;
+    color: #d5641c;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+#form-search{
+	width: 350px;
+    height: 50px;
+    margin: 0px 0px 5px;
+    letter-spacing: 2px;
+    font-size: 18px;
 }
